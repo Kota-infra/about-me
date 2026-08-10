@@ -2,38 +2,49 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,inital-scale=1.0" />
-    <title>私について</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>About | Profile</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
   <body>
     <aside class="sidebar">
-      <a href="index.html" class="brand">←TOPページに戻る</a>
+      <a href="index.html" class="brand" aria-label="ホーム"></a>
+
       <nav class="sidebar-nav">
         <a href="index.html">Home</a>
         <a href="about.html" class="active">About</a>
         <a href="baseball.html">Baseball</a>
       </nav>
+
+      <div class="sidebar-contact">
+        <a href="mailto:example@example.com">Contact</a>
+      </div>
     </aside>
 
     <main class="content">
-      <section>
-        <div class="page-header">
-          <span class="eyebrow">About Me</span>
-          <h2>はじめまして！</h2>
-        </div>
+      <header class="hero">
+        <h1>自己紹介</h1>
+      </header>
 
-        <div>
-          <ul class="facts">
-            <li><span>名前:</span><span>名前</span></li>
-            <li><span>出身:</span><span>出身</span></li>
-            <li><span>好きなこと:</span><span>野球観戦</span></li>
-          </ul>
-        </div>
+      <svg class="stitch" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,30 Q250,0 500,30 T1000,30" />
+      </svg>
+
+      <section class="link-card" style="max-width: 900px; margin: 0 auto;">
+        <span class="tag">About</span>
+        <h3>自分について</h3>
+        <p>
+          ここに自己紹介文を書きます。趣味、好きなこと、普段していることなどを入れると見やすいです。
+        </p>
       </section>
 
-      <div class="copyright">©︎ 2026 名前</div>
+      <footer>
+        <p>見てくれてありがとう！</p>
+      </footer>
     </main>
   </body>
 </html>
