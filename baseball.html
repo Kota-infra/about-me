@@ -1,50 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Baseball | Profile</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-  </head>
-  <body>
-    <aside class="sidebar">
-      <a href="index.html" class="brand" aria-label="ホーム"></a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>趣味について</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <aside class="sidebar">
+            <a href="index.html" class="brand">←TOPページに戻る</a>
+            <nav class="sidebar-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="baseball.html" class="active">Baseball</a>
+            </nav>
+        </aside>
+        
+        <main class="content field-section">
 
-      <nav class="sidebar-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="baseball.html" class="active">Baseball</a>
-      </nav>
+            <section>
+                <div class="page-header">
+                    <span class="eyebrow">My Hobby</span>
+                    <h2>私と野球</h2>
+                </div>
 
-      <div class="sidebar-contact">
-        <a href="mailto:example@example.com">Contact</a>
-      </div>
-    </aside>
+                <div class="stat-row">
+                    <div class="stat">
+                        <h3>なぜ、野球を好きになったか</h3>
+                        <p>父の影響で小さい頃よく甲子園に野球を見に行っていた。</p>
+                    </div>
+                    <div class="stat">
+                        <h3>応援しているチーム</h3>
+                        <p>阪神タイガース</p>
+                    </div>
+                    <div class="stat">
+                        <h3>好きな選手</h3>
+                        <p>佐藤輝明選手</p>
+                        <p>理由</p>
+                        <p>技術の高さとチームワークの良さに感動したからです。</p>
+                    </div>
+                </div>
 
-    <main class="content">
-      <header class="hero">
-        <h1>私と野球</h1>
-      </header>
+                <div class="story">
+                    <article class="story-card">
+                        <h3>阪神の好きなところ</h3>
+                        <p>最後まであきらめない姿勢と、ベンチも含めた一体感が魅力です。接戦でも全員で勝ちに行く雰囲気が好きです。</p>
+                    </article>
+                </div>
 
-      <svg class="stitch" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M0,30 Q250,0 500,30 T1000,30" />
-      </svg>
-
-      <section class="link-card" style="max-width: 900px; margin: 0 auto;">
-        <span class="tag">Baseball</span>
-        <h3>野球について</h3>
-        <p>
-          ここに野球が好きな理由、応援しているチーム、好きな選手、観戦の思い出などを書きます。
-        </p>
-      </section>
-
-      <footer>
-        <p>見てくれてありがとう！</p>
-      </footer>
-    </main>
-  </body>
+                <div class="memory-block">
+                    <h3>思い出に残っている試合</h3>
+                    <ul class="memory-list">
+                        <li>
+                            <span>甲子園で見た逆転試合</span>
+                            <p>終盤に流れが変わって、一気にスタンドが盛り上がった瞬間は今でも忘れられません。</p>
+                        </li>
+                        <li>
+                            <span>テレビ観戦で見た好プレー連発の試合</span>
+                            <p>守備で流れを引き寄せる大切さを感じた試合で、野球の面白さを再確認しました。</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="copyright">©︎ 2026 名前</div>
+        </main>
+    </body>
 </html>
