@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>好きなもの紹介</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <header class="sidebar-header">
+        <a href="index.html" class="brand">Profile</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="メニューを開閉する">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </header>
+      <nav class="sidebar-nav" id="primary-nav" aria-label="サイト内ナビゲーション">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="baseball.html">Baseball</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </aside>
+
+    <main class="content" id="main-content">
+      <section>
+        <div class="page-header">
+          <span class="eyebrow">Favorites</span>
+          <h2>好きなもの紹介</h2>
+        </div>
+        <p class="favorite-intro">野球以外の好きなもの</p>
+
+        <div class="home-highlights">
+          <article class="highlight-card">
+            <h3>音楽を聴くこと</h3>
+            <p>通学中や勉強の合間はだいたい音楽を聴いています。ジャンルはその時の気分によってバラバラなのでこれが好きというものはないです</p>
+          </article>
+          <article class="highlight-card">
+            <h3>スポーツニュースを見ること</h3>
+            <p>主に野球メインでですが、たまには他の競技のニュースもチェックしています。</p>
+          </article>
+        </div>
+
+        <div class="photo-row">
+          <div class="page-photo">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Headphones.jpg" alt="ヘッドホン">
+            <p class="photo-credit">
+              <a href="https://commons.wikimedia.org/wiki/File:Headphones.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> (CC BY-SA 3.0)
+            </p>
+          </div>
+          <div class="page-photo">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Open_book_(Unsplash).jpg" alt="開いた本">
+            <p class="photo-credit">
+              <a href="https://commons.wikimedia.org/wiki/File:Open_book_(Unsplash).jpg" target="_blank" rel="noopener">Wikimedia Commons</a> (CC0)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="copyright">© <span class="js-year">2026</span>
+      </footer>
+    </main>
+
+    <script src="Main.js" defer></script>
+  </body>
+</html>

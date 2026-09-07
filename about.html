@@ -2,58 +2,68 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,inital-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>私について</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   </head>
   <body>
     <aside class="sidebar">
-      <a href="index.html" class="brand">←TOPページに戻る</a>
-      <nav class="sidebar-nav">
+      <header class="sidebar-header">
+        <a href="index.html" class="brand">Profile</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="メニューを開閉する">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </header>
+      <nav class="sidebar-nav" id="primary-nav" aria-label="サイト内ナビゲーション">
         <a href="index.html">Home</a>
-        <a href="about.html" class="active">About</a>
+        <a href="about.html">About</a>
         <a href="baseball.html">Baseball</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </aside>
 
-    <main class="content">
+    <main class="content" id="main-content">
       <section>
         <div class="page-header">
           <span class="eyebrow">About Me</span>
           <h2>はじめまして！</h2>
         </div>
 
+        <div class="page-photo">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Laptop_on_a_desk.jpg" alt="ノートパソコンが置かれた机">
+          <p class="photo-credit">
+            <a href="https://commons.wikimedia.org/wiki/File:Laptop_on_a_desk.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> (CC0)
+          </p>
+        </div>
+
         <div>
           <ul class="facts">
             <li><span>名前:</span><span>福田 康太</span></li>
             <li><span>出身:</span><span>京都府</span></li>
-            <li>
-              <span>好きなこと:</span
-              ><span>野球観戦（球場見るのも家で見るのも両方好きです！）</span>
-            </li>
+            <li><span>好きなこと:</span><span>野球観戦（球場見るのも家で見るのも両方好きです！）</span></li>
           </ul>
 
           <div class="about-note">
             <h3>ひとこと</h3>
-            <p>
-              このサイトは「自分がどんな人か」を短く伝えるために作りました。野球が中心ですが、それ以外の好きなことも載せています。
-            </p>
+            <p>このサイトは「自分がどんな人か」を短く伝えるために作りました。野球が中心ですが、野球以外の好きなことについても書いています！</p>
           </div>
 
           <div class="chips">
-            <h3>他に好きなこと</h3>
             <span class="chip">音楽を聴く</span>
-            <span class="chip">映画を観る</span>
             <span class="chip">スポーツニュースを見る</span>
           </div>
         </div>
       </section>
 
-      <div class="copyright">©︎ 2026 福田 康太</div>
+      <footer class="site-footer">
+        <div class="copyright">© <span class="js-year">2026</span>
+      </footer>
     </main>
+
+    <script src="Main.js" defer></script>
   </body>
 </html>

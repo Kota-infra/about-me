@@ -5,92 +5,97 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Profile</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   </head>
   <body>
     <aside class="sidebar">
-      <a href="index.html" class="brand"></a>
-      <nav class="sidebar-nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">about</a>
+      <header class="sidebar-header">
+        <a href="index.html" class="brand">Profile</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="メニューを開閉する">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </header>
+      <nav class="sidebar-nav" id="primary-nav" aria-label="サイト内ナビゲーション">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
         <a href="baseball.html">Baseball</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="contact.html">Contact</a>
       </nav>
-      <div class="sidebar-contact">
-        <a href="aaaa">Contact</a>
-      </div>
     </aside>
 
-    <main class="content">
+    <main class="content" id="main-content">
       <header class="hero">
         <span class="eyebrow">Welcome</span>
-        <h1>ようこそ、私の自己紹介サイトへ！</h1>
-        <p class="sub">
-          野球の話を中心に、普段のことや好きなものをまとめています。はじめて来た方でも読みやすいように、短く分かりやすく紹介しています。
-        </p>
+        <h1>ようこそ、私の自己紹介サイトへ</h1>
+        <p class="sub">野球の話を中心に、普段のことや好きなものをまとめています。はじめて来た方でも読みやすいように、短く分かりやすく紹介しています。</p>
         <div class="hero-media">
-          <img
-            src="https://commons.wikimedia.org/wiki/Special:FilePath/Hanshin_Koshien_Stadium.jpg"
-            alt="阪神甲子園球場"
-          />
+          <div class="hero-media-item">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hanshin_Koshien_Stadium.jpg" alt="阪神甲子園球場" />
+            <p class="photo-credit">
+              <a href="https://commons.wikimedia.org/wiki/File:Hanshin_Koshien_Stadium.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> (CC BY 2.0)
+            </p>
+          </div>
+          <div class="hero-media-item">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Baseball.jpg" alt="野球のボール" />
+            <p class="photo-credit">
+              <a href="https://commons.wikimedia.org/wiki/File:Baseball.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> (CC BY-SA 2.0)
+            </p>
+          </div>
+          <div class="hero-media-item">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Baseball_glove.png" alt="野球のグローブ" />
+            <p class="photo-credit">
+              <a href="https://commons.wikimedia.org/wiki/File:Baseball_glove.png" target="_blank" rel="noopener">Wikimedia Commons</a> (Public Domain)
+            </p>
+          </div>
         </div>
-        <p class="photo-credit">
-          Photo:
-          <a
-            href="https://commons.wikimedia.org/wiki/File:Hanshin_Koshien_Stadium.jpg"
-            target="_blank"
-            rel="noopener"
-            >Wikimedia Commons</a
-          >
-          (CC BY 2.0)
-        </p>
       </header>
 
-      <svg class="stitch" viewBox="0 0 1000 60" preserveAspectRatio="none">
+      <svg class="stitch" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
         <path d="M0,30 Q250,0 500,30 T1000,30" />
       </svg>
 
       <section>
         <div class="home-highlights">
           <article class="highlight-card">
-            <h3>このサイトについて</h3>
-            <p>
-              私の基本情報、好きなこと、そして野球に対する思いを1ページずつ丁寧にまとめています。
-            </p>
+            <h3>このサイトで分かること</h3>
+            <p>私の基本情報、好きなこと、そして野球に対する思いを1ページずつ丁寧にまとめています。</p>
           </article>
           <article class="highlight-card">
             <h3>特に見てほしいページ</h3>
-            <p>
-              野球のページは、応援しているチームや好きな選手だけでなく、思い出に残っているシーンなども追加しました。
-            </p>
+            <p>野球ページは、応援しているチームや好きな選手だけでなく、観戦スタイルや思い出も追加しました。</p>
           </article>
         </div>
 
         <div class="link-cards">
           <a href="about.html" class="link-card">
-            <div class="link-icon">
-              <i class="fa-solid fa-user"></i>
-            </div>
+            <div class="link-icon"><i class="fa-solid fa-user"></i></div>
             <span class="tag">About</span>
             <h3>自己紹介</h3>
             <p>普段の自分について。</p>
           </a>
           <a href="baseball.html" class="link-card">
-            <div class="link-icon">
-              <i class="fa-solid fa-baseball"></i>
-            </div>
+            <div class="link-icon"><i class="fa-solid fa-baseball"></i></div>
             <span class="tag">Baseball</span>
             <h3>私と野球</h3>
             <p>好きな選手・野球ファン人生</p>
           </a>
+          <a href="favorites.html" class="link-card">
+            <div class="link-icon"><i class="fa-solid fa-heart"></i></div>
+            <span class="tag">Favorites</span>
+            <h3>好きなもの紹介</h3>
+            <p>野球以外にも、好きなものをいくつか。</p>
+          </a>
         </div>
-      </section>
 
-      <footer>
+      <footer class="site-footer">
         <p>見てくれてありがとう！</p>
+        <div class="copyright">© <span class="js-year">2026</span> 
       </footer>
     </main>
+
+    <script src="Main.js" defer></script>
   </body>
 </html>
